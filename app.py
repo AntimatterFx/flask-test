@@ -6,6 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app=Flask(__name__)
+app.config['CKEDITOR_SERVE_LOCAL'] = True
 app.config["CKEDITOR_PKG_TYPE"]='basic'
 app.config["SQLALCHEMY_DATABASE_URI"]='sqlite:///app.db'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
